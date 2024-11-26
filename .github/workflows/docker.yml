@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: Docker Build 和 Push
 
 on:
   push:
@@ -27,10 +27,10 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Build and push multi-arch Docker image
+      - name: Build 和 push multi-arch Docker image
         uses: docker/build-push-action@v4
         with:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64,linux/386,linux/arm/v6,linux/arm/v7
-          tags: cmliu/cfnat:latest
+          tags: mimimimimimimiiii/cfnat:latest
